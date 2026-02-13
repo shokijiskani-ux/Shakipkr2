@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Knowledge Quiz Game</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        #quiz { max-width: 600px; margin: auto; }
+        .question { font-size: 20px; }
+        .options { margin-top: 20px; }
+        .option { margin: 5px 0; }
+        #score, #timer { font-size: 18px; margin: 10px 0; }
+    </style>
+</head>
+<body>
+    <div id="quiz">
+        <h1>World Knowledge Quiz Game</h1>
+        <div id="timer">Time Left: <span id="time">60</span> seconds</div>
+        <div id="score">Score: <span id="scoreValue">0</span></div>
+        <div class="question" id="question">Question will appear here</div>
+        <div class="options" id="options">
+            <div class="option"><button onclick="selectOption(1)">Option 1</button></div>
+            <div class="option"><button onclick="selectOption(2)">Option 2</button></div>
+            <div class="option"><button onclick="selectOption(3)">Option 3</button></div>
+            <div class="option"><button onclick="selectOption(4)">Option 4</button></div>
+        </div>
+        <button id="submitBtn" onclick="submitAnswer()">Submit Answer</button>
+    </div>
+    
+    <script>
+        // Quiz logic goes here
+        let score = 0;
+        let timer = 60;
+        // Load questions, handle scoring and timer here
+    </script>
+</body>
+</html>
